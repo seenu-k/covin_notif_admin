@@ -36,3 +36,7 @@ export interface Session {
     vaccine: Vaccine;
     slots: string[];
 }
+
+export interface CalenderResponse {
+    centers: Center[];
+}
