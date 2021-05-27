@@ -51,3 +51,12 @@ export interface PersonPreferences {
     min_age_limit_preference: MinAgeLimitPreference;
     vaccine_preference: VaccinePreference;
 }
+
+export type LocationType = 'district' | 'pincode';
+
+export interface User {
+    location_type: LocationType;
+    location_district?: number;
+    location_pincode?: string;
+    persons: PersonPreferences[];
+}
